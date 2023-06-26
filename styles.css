@@ -1,0 +1,55 @@
+body{
+    background: #ffff7175;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    max-width: 1440px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    transition: .5s ease all;
+    overflow: hidden;
+}
+
+.pokeImage{
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 4%;
+    cursor: pointer;
+    position: relative;
+    left: -33%;
+}
+
+#prev,
+#next{
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    padding: 0;
+    background: #bc8ddb;
+    line-height: 40px;
+    text-align: center;
+    color: #ffff71;
+}
+
+.move-right {
+    transform: translateX(-130%);
+    transition: transform 0.3s ease;
+}
+
+.move-left{
+    transform: translateX(130%);
+    transition: transform 0.3s ease;
+}
